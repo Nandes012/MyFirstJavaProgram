@@ -30,14 +30,13 @@ public class MyFirstProgram {
 
         // Welcome message with colored text
         System.out.println(BG_BLUE + WHITE_TEXT + "Welcome to the program!" + RESET);
-        System.out.print(BG_RED + YELLOW_TEXT + "Please enter your name: " + INPUT_COLOR); // Set input color
+        System.out.print(BG_RED + YELLOW_TEXT + "Please enter your name: " + YELLOW_TEXT); // Set input color
         String name = input.nextLine();
         System.out.print(RESET); // Reset after input
 
         // Apply background and text color explicitly for each line
         System.out.println(BG_BLUE + GREEN_TEXT + "Hi there " + name + "!" + RESET);
-        System.out.println(BG_BLUE + CYAN_TEXT + "Thank you for opening this program!" + RESET);
-        System.out.println(BG_BLUE + YELLOW_TEXT + "Current Java Version: " + System.getProperty("java.version") + RESET);
+        System.out.println(BG_RED + CYAN_TEXT + "Current Java Version: " + System.getProperty("java.version") + RESET);
 
         // Array of fun facts, each line is has an index from 0-9 (since there is 10 line in the array)
         String[] funFacts = {
@@ -60,6 +59,7 @@ public class MyFirstProgram {
         System.out.println(BG_RED + WHITE_TEXT + "Here's a fun fact about Java:" + RESET);
         // Would output 1 0f the funfacts there are in the array base on the index its choose random
         System.out.println(BG_RED + YELLOW_TEXT + funFacts[randomIndex] + RESET);
+        System.out.println(BG_BLUE + INPUT_COLOR + "Thank you for opening this program!" + RESET);
         System.out.println("This text will be cleared in 5 seconds...");
         Thread.sleep(5000); // Pause for 5 seconds
         // To clear the console
