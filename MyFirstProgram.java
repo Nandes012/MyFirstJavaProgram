@@ -17,7 +17,7 @@ public class MyFirstProgram {
         String CYAN_TEXT = "\033[96m";
         String INPUT_COLOR = "\033[95m"; // Purple input color
 
-        // Clear screen and fill background with blue
+        // Clear screen and fill background with the color blue
         System.out.print(CLEAR_SCREEN);
         System.out.print(BG_BLUE);
         for (int i = 0; i < 50; i++) {
@@ -30,9 +30,11 @@ public class MyFirstProgram {
 
         // Welcome message with colored text
         System.out.println(BG_BLUE + WHITE_TEXT + "Welcome to the program!" + RESET);
-        System.out.print(BG_RED + YELLOW_TEXT + "Please enter your name: " + YELLOW_TEXT); // Set input color
+        System.out.print(BG_RED + YELLOW_TEXT + "Please enter your name: " + YELLOW_TEXT); 
+        // Set input color
         String name = input.nextLine();
-        System.out.print(RESET); // Reset after input
+        // Reset after input
+        System.out.print(RESET); 
 
         // Apply background and text color explicitly for each line
         System.out.println(BG_BLUE + GREEN_TEXT + "Hi there " + name + "!" + RESET);
@@ -61,7 +63,8 @@ public class MyFirstProgram {
         System.out.println(BG_RED + YELLOW_TEXT + funFacts[randomIndex] + RESET);
         System.out.println(BG_BLUE + INPUT_COLOR + "Thank you for opening this program!" + RESET);
         System.out.println("This text will be cleared in 5 seconds...");
-        Thread.sleep(5000); // Pause for 5 seconds
+        // Pause for 5 seconds
+        Thread.sleep(5000); 
         // To clear the console
         System.out.print("\033[H\033[2J");
         System.out.flush();
